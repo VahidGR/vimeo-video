@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54C1E8CCB81B1D53B0A5D900 /* Pods_namava_assesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64ABA84F6DB92A1EDAA9783F /* Pods_namava_assesmentTests.framework */; };
 		66321FC32907FB28002B43A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC22907FB28002B43A8 /* AppDelegate.swift */; };
 		66321FC52907FB28002B43A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC42907FB28002B43A8 /* SceneDelegate.swift */; };
 		66321FC72907FB28002B43A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC62907FB28002B43A8 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		66321FDA2907FB2A002B43A8 /* namava_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */; };
 		66321FE42907FB2A002B43A8 /* namava_assesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */; };
 		66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */; };
+		8BF9836B6ADF0305FFE18972 /* Pods_namava_assesment_namava_assesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0617BD1519538602CDBDDE /* Pods_namava_assesment_namava_assesmentUITests.framework */; };
+		E833B26D4DF5607302EAB1E2 /* Pods_namava_assesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B00DF4CBB411D17D96050A /* Pods_namava_assesment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15DA00960E258501490CEBBC /* Pods-namava-assesment-namava-assesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesment-namava-assesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-namava-assesment-namava-assesmentUITests/Pods-namava-assesment-namava-assesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45634CF40A2AC27CBFFF99C3 /* Pods-namava-assesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-namava-assesmentTests/Pods-namava-assesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B7B86225571414B5A574464 /* Pods-namava-assesment-namava-assesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesment-namava-assesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-namava-assesment-namava-assesmentUITests/Pods-namava-assesment-namava-assesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64ABA84F6DB92A1EDAA9783F /* Pods_namava_assesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava_assesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66321FBF2907FB28002B43A8 /* namava-assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "namava-assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66321FC22907FB28002B43A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66321FC42907FB28002B43A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		66321FDF2907FB2A002B43A8 /* namava-assesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "namava-assesmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITests.swift; sourceTree = "<group>"; };
 		66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		671D16FEE654EB20914ED427 /* Pods-namava-assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-namava-assesmentTests/Pods-namava-assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE0617BD1519538602CDBDDE /* Pods_namava_assesment_namava_assesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava_assesment_namava_assesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9AD2B9F5C17F100D6DB4CCA /* Pods-namava-assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesment.debug.xcconfig"; path = "Target Support Files/Pods-namava-assesment/Pods-namava-assesment.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B00DF4CBB411D17D96050A /* Pods_namava_assesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava_assesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9D80F4DE7B361E2B2E172EE /* Pods-namava-assesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesment.release.xcconfig"; path = "Target Support Files/Pods-namava-assesment/Pods-namava-assesment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E833B26D4DF5607302EAB1E2 /* Pods_namava_assesment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54C1E8CCB81B1D53B0A5D900 /* Pods_namava_assesmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF9836B6ADF0305FFE18972 /* Pods_namava_assesment_namava_assesmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D98416BEA83D7750C9E1100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B00DF4CBB411D17D96050A /* Pods_namava_assesment.framework */,
+				AE0617BD1519538602CDBDDE /* Pods_namava_assesment_namava_assesmentUITests.framework */,
+				64ABA84F6DB92A1EDAA9783F /* Pods_namava_assesmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5677034F64D11891FD6A9A85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD2B9F5C17F100D6DB4CCA /* Pods-namava-assesment.debug.xcconfig */,
+				F9D80F4DE7B361E2B2E172EE /* Pods-namava-assesment.release.xcconfig */,
+				5B7B86225571414B5A574464 /* Pods-namava-assesment-namava-assesmentUITests.debug.xcconfig */,
+				15DA00960E258501490CEBBC /* Pods-namava-assesment-namava-assesmentUITests.release.xcconfig */,
+				45634CF40A2AC27CBFFF99C3 /* Pods-namava-assesmentTests.debug.xcconfig */,
+				671D16FEE654EB20914ED427 /* Pods-namava-assesmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		66321FB62907FB28002B43A8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				66321FD82907FB2A002B43A8 /* namava-assesmentTests */,
 				66321FE22907FB2A002B43A8 /* namava-assesmentUITests */,
 				66321FC02907FB28002B43A8 /* Products */,
+				5677034F64D11891FD6A9A85 /* Pods */,
+				2D98416BEA83D7750C9E1100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66321FE92907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesment" */;
 			buildPhases = (
+				40DDFD178D331EC643F1097C /* [CP] Check Pods Manifest.lock */,
 				66321FBB2907FB28002B43A8 /* Sources */,
 				66321FBC2907FB28002B43A8 /* Frameworks */,
 				66321FBD2907FB28002B43A8 /* Resources */,
+				1746756A4C10A17FA75B33DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66321FEC2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentTests" */;
 			buildPhases = (
+				6BD61A2A42EA5F9310D8F734 /* [CP] Check Pods Manifest.lock */,
 				66321FD12907FB2A002B43A8 /* Sources */,
 				66321FD22907FB2A002B43A8 /* Frameworks */,
 				66321FD32907FB2A002B43A8 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66321FEF2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentUITests" */;
 			buildPhases = (
+				95E4142B7177B03527292131 /* [CP] Check Pods Manifest.lock */,
 				66321FDB2907FB2A002B43A8 /* Sources */,
 				66321FDC2907FB2A002B43A8 /* Frameworks */,
 				66321FDD2907FB2A002B43A8 /* Resources */,
+				FE6A17C944E79E086A8E2E44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1746756A4C10A17FA75B33DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-assesment/Pods-namava-assesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-assesment/Pods-namava-assesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-namava-assesment/Pods-namava-assesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40DDFD178D331EC643F1097C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namava-assesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD61A2A42EA5F9310D8F734 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namava-assesmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95E4142B7177B03527292131 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-namava-assesment-namava-assesmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6A17C944E79E086A8E2E44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-assesment-namava-assesmentUITests/Pods-namava-assesment-namava-assesmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-namava-assesment-namava-assesmentUITests/Pods-namava-assesment-namava-assesmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-namava-assesment-namava-assesmentUITests/Pods-namava-assesment-namava-assesmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66321FBB2907FB28002B43A8 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		66321FEA2907FB2A002B43A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9AD2B9F5C17F100D6DB4CCA /* Pods-namava-assesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +610,7 @@
 		};
 		66321FEB2907FB2A002B43A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9D80F4DE7B361E2B2E172EE /* Pods-namava-assesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +639,7 @@
 		};
 		66321FED2907FB2A002B43A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45634CF40A2AC27CBFFF99C3 /* Pods-namava-assesmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +660,7 @@
 		};
 		66321FEE2907FB2A002B43A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671D16FEE654EB20914ED427 /* Pods-namava-assesmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		66321FF02907FB2A002B43A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7B86225571414B5A574464 /* Pods-namava-assesment-namava-assesmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +700,7 @@
 		};
 		66321FF12907FB2A002B43A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DA00960E258501490CEBBC /* Pods-namava-assesment-namava-assesmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_namava_assesment_namava_assesmentUITests {
+  umbrella header "Pods-namava-assesment-namava-assesmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
