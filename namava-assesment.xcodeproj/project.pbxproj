@@ -10,7 +10,6 @@
 		54C1E8CCB81B1D53B0A5D900 /* Pods_namava_assesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64ABA84F6DB92A1EDAA9783F /* Pods_namava_assesmentTests.framework */; };
 		66321FC32907FB28002B43A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC22907FB28002B43A8 /* AppDelegate.swift */; };
 		66321FC52907FB28002B43A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC42907FB28002B43A8 /* SceneDelegate.swift */; };
-		66321FC72907FB28002B43A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC62907FB28002B43A8 /* ViewController.swift */; };
 		66321FCA2907FB28002B43A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66321FC82907FB28002B43A8 /* Main.storyboard */; };
 		66321FCC2907FB2A002B43A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66321FCB2907FB2A002B43A8 /* Assets.xcassets */; };
 		66321FCF2907FB2A002B43A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */; };
@@ -46,7 +45,6 @@
 		66321FBF2907FB28002B43A8 /* namava-assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "namava-assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66321FC22907FB28002B43A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66321FC42907FB28002B43A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66321FC62907FB28002B43A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66321FC92907FB28002B43A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66321FCB2907FB2A002B43A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66321FCE2907FB2A002B43A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				45634CF40A2AC27CBFFF99C3 /* Pods-namava-assesmentTests.debug.xcconfig */,
 				671D16FEE654EB20914ED427 /* Pods-namava-assesmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,12 +137,11 @@
 		66321FC12907FB28002B43A8 /* namava-assesment */ = {
 			isa = PBXGroup;
 			children = (
-				66321FC22907FB28002B43A8 /* AppDelegate.swift */,
-				66321FC42907FB28002B43A8 /* SceneDelegate.swift */,
-				66321FC62907FB28002B43A8 /* ViewController.swift */,
-				66321FC82907FB28002B43A8 /* Main.storyboard */,
+				66DE13032907FC2000ECF1C1 /* App */,
+				66DE13042907FC2500ECF1C1 /* Module */,
+				66DE13092907FC5A00ECF1C1 /* Service */,
+				66DE130A2907FC5F00ECF1C1 /* Model */,
 				66321FCB2907FB2A002B43A8 /* Assets.xcassets */,
-				66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */,
 				66321FD02907FB2A002B43A8 /* Info.plist */,
 			);
 			path = "namava-assesment";
@@ -166,6 +162,62 @@
 				66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */,
 			);
 			path = "namava-assesmentUITests";
+			sourceTree = "<group>";
+		};
+		66DE13032907FC2000ECF1C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				66321FC22907FB28002B43A8 /* AppDelegate.swift */,
+				66321FC42907FB28002B43A8 /* SceneDelegate.swift */,
+				66321FC82907FB28002B43A8 /* Main.storyboard */,
+				66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		66DE13042907FC2500ECF1C1 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				66DE13082907FC4900ECF1C1 /* Controller */,
+				66DE13072907FC4100ECF1C1 /* ViewModel */,
+				66DE13052907FC3100ECF1C1 /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		66DE13052907FC3100ECF1C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66DE13072907FC4100ECF1C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		66DE13082907FC4900ECF1C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66DE13092907FC5A00ECF1C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		66DE130A2907FC5F00ECF1C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +459,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66321FC72907FB28002B43A8 /* ViewController.swift in Sources */,
 				66321FC32907FB28002B43A8 /* AppDelegate.swift in Sources */,
 				66321FC52907FB28002B43A8 /* SceneDelegate.swift in Sources */,
 			);
