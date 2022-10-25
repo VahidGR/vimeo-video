@@ -106,6 +106,7 @@
 		66DE13352908077600ECF1C1 /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
 		66DE133929080AD900ECF1C1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		66DE133D29080DCE00ECF1C1 /* ListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
+		66DE134129083EFB00ECF1C1 /* VimeoConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = VimeoConfig.xcconfig; sourceTree = "<group>"; };
 		671D16FEE654EB20914ED427 /* Pods-namava-assesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesmentTests.release.xcconfig"; path = "Target Support Files/Pods-namava-assesmentTests/Pods-namava-assesmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE0617BD1519538602CDBDDE /* Pods_namava_assesment_namava_assesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_namava_assesment_namava_assesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AD2B9F5C17F100D6DB4CCA /* Pods-namava-assesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namava-assesment.debug.xcconfig"; path = "Target Support Files/Pods-namava-assesment/Pods-namava-assesment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +196,7 @@
 				66DE130A2907FC5F00ECF1C1 /* Model */,
 				66321FCB2907FB2A002B43A8 /* Assets.xcassets */,
 				66321FD02907FB2A002B43A8 /* Info.plist */,
+				66DE134129083EFB00ECF1C1 /* VimeoConfig.xcconfig */,
 			);
 			path = "namava-assesment";
 			sourceTree = "<group>";
@@ -638,6 +640,7 @@
 /* Begin XCBuildConfiguration section */
 		66321FE72907FB2A002B43A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DE134129083EFB00ECF1C1 /* VimeoConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -698,6 +701,7 @@
 		};
 		66321FE82907FB2A002B43A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66DE134129083EFB00ECF1C1 /* VimeoConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -764,6 +768,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -793,6 +798,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
