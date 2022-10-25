@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66321FC32907FB28002B43A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC22907FB28002B43A8 /* AppDelegate.swift */; };
+		66321FC52907FB28002B43A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC42907FB28002B43A8 /* SceneDelegate.swift */; };
+		66321FC72907FB28002B43A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FC62907FB28002B43A8 /* ViewController.swift */; };
+		66321FCA2907FB28002B43A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66321FC82907FB28002B43A8 /* Main.storyboard */; };
+		66321FCC2907FB2A002B43A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66321FCB2907FB2A002B43A8 /* Assets.xcassets */; };
+		66321FCF2907FB2A002B43A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */; };
+		66321FDA2907FB2A002B43A8 /* namava_assesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */; };
+		66321FE42907FB2A002B43A8 /* namava_assesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */; };
+		66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66321FD62907FB2A002B43A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66321FB72907FB28002B43A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66321FBE2907FB28002B43A8;
+			remoteInfo = "namava-assesment";
+		};
+		66321FE02907FB2A002B43A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66321FB72907FB28002B43A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66321FBE2907FB28002B43A8;
+			remoteInfo = "namava-assesment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		66321FBF2907FB28002B43A8 /* namava-assesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "namava-assesment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66321FC22907FB28002B43A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66321FC42907FB28002B43A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66321FC62907FB28002B43A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66321FC92907FB28002B43A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66321FCB2907FB2A002B43A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66321FCE2907FB2A002B43A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66321FD02907FB2A002B43A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66321FD52907FB2A002B43A8 /* namava-assesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "namava-assesmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentTests.swift; sourceTree = "<group>"; };
+		66321FDF2907FB2A002B43A8 /* namava-assesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "namava-assesmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITests.swift; sourceTree = "<group>"; };
+		66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66321FBC2907FB28002B43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FD22907FB2A002B43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FDC2907FB2A002B43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66321FB62907FB28002B43A8 = {
+			isa = PBXGroup;
+			children = (
+				66321FC12907FB28002B43A8 /* namava-assesment */,
+				66321FD82907FB2A002B43A8 /* namava-assesmentTests */,
+				66321FE22907FB2A002B43A8 /* namava-assesmentUITests */,
+				66321FC02907FB28002B43A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66321FC02907FB28002B43A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66321FBF2907FB28002B43A8 /* namava-assesment.app */,
+				66321FD52907FB2A002B43A8 /* namava-assesmentTests.xctest */,
+				66321FDF2907FB2A002B43A8 /* namava-assesmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66321FC12907FB28002B43A8 /* namava-assesment */ = {
+			isa = PBXGroup;
+			children = (
+				66321FC22907FB28002B43A8 /* AppDelegate.swift */,
+				66321FC42907FB28002B43A8 /* SceneDelegate.swift */,
+				66321FC62907FB28002B43A8 /* ViewController.swift */,
+				66321FC82907FB28002B43A8 /* Main.storyboard */,
+				66321FCB2907FB2A002B43A8 /* Assets.xcassets */,
+				66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */,
+				66321FD02907FB2A002B43A8 /* Info.plist */,
+			);
+			path = "namava-assesment";
+			sourceTree = "<group>";
+		};
+		66321FD82907FB2A002B43A8 /* namava-assesmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */,
+			);
+			path = "namava-assesmentTests";
+			sourceTree = "<group>";
+		};
+		66321FE22907FB2A002B43A8 /* namava-assesmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */,
+				66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */,
+			);
+			path = "namava-assesmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66321FBE2907FB28002B43A8 /* namava-assesment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66321FE92907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesment" */;
+			buildPhases = (
+				66321FBB2907FB28002B43A8 /* Sources */,
+				66321FBC2907FB28002B43A8 /* Frameworks */,
+				66321FBD2907FB28002B43A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "namava-assesment";
+			productName = "namava-assesment";
+			productReference = 66321FBF2907FB28002B43A8 /* namava-assesment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66321FD42907FB2A002B43A8 /* namava-assesmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66321FEC2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentTests" */;
+			buildPhases = (
+				66321FD12907FB2A002B43A8 /* Sources */,
+				66321FD22907FB2A002B43A8 /* Frameworks */,
+				66321FD32907FB2A002B43A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66321FD72907FB2A002B43A8 /* PBXTargetDependency */,
+			);
+			name = "namava-assesmentTests";
+			productName = "namava-assesmentTests";
+			productReference = 66321FD52907FB2A002B43A8 /* namava-assesmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		66321FDE2907FB2A002B43A8 /* namava-assesmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66321FEF2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentUITests" */;
+			buildPhases = (
+				66321FDB2907FB2A002B43A8 /* Sources */,
+				66321FDC2907FB2A002B43A8 /* Frameworks */,
+				66321FDD2907FB2A002B43A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66321FE12907FB2A002B43A8 /* PBXTargetDependency */,
+			);
+			name = "namava-assesmentUITests";
+			productName = "namava-assesmentUITests";
+			productReference = 66321FDF2907FB2A002B43A8 /* namava-assesmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66321FB72907FB28002B43A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					66321FBE2907FB28002B43A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					66321FD42907FB2A002B43A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 66321FBE2907FB28002B43A8;
+					};
+					66321FDE2907FB2A002B43A8 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 66321FBE2907FB28002B43A8;
+					};
+				};
+			};
+			buildConfigurationList = 66321FBA2907FB28002B43A8 /* Build configuration list for PBXProject "namava-assesment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66321FB62907FB28002B43A8;
+			productRefGroup = 66321FC02907FB28002B43A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66321FBE2907FB28002B43A8 /* namava-assesment */,
+				66321FD42907FB2A002B43A8 /* namava-assesmentTests */,
+				66321FDE2907FB2A002B43A8 /* namava-assesmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66321FBD2907FB28002B43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66321FCF2907FB2A002B43A8 /* LaunchScreen.storyboard in Resources */,
+				66321FCC2907FB2A002B43A8 /* Assets.xcassets in Resources */,
+				66321FCA2907FB28002B43A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FD32907FB2A002B43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FDD2907FB2A002B43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66321FBB2907FB28002B43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66321FC72907FB28002B43A8 /* ViewController.swift in Sources */,
+				66321FC32907FB28002B43A8 /* AppDelegate.swift in Sources */,
+				66321FC52907FB28002B43A8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FD12907FB2A002B43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66321FDA2907FB2A002B43A8 /* namava_assesmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66321FDB2907FB2A002B43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */,
+				66321FE42907FB2A002B43A8 /* namava_assesmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66321FD72907FB2A002B43A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66321FBE2907FB28002B43A8 /* namava-assesment */;
+			targetProxy = 66321FD62907FB2A002B43A8 /* PBXContainerItemProxy */;
+		};
+		66321FE12907FB2A002B43A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66321FBE2907FB28002B43A8 /* namava-assesment */;
+			targetProxy = 66321FE02907FB2A002B43A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66321FC82907FB28002B43A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66321FC92907FB28002B43A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66321FCE2907FB2A002B43A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66321FE72907FB2A002B43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66321FE82907FB2A002B43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66321FEA2907FB2A002B43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "namava-assesment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66321FEB2907FB2A002B43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "namava-assesment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66321FED2907FB2A002B43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/namava-assesment.app/namava-assesment";
+			};
+			name = Debug;
+		};
+		66321FEE2907FB2A002B43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/namava-assesment.app/namava-assesment";
+			};
+			name = Release;
+		};
+		66321FF02907FB2A002B43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "namava-assesment";
+			};
+			name = Debug;
+		};
+		66321FF12907FB2A002B43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W8U9KLFQF6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vahid.namava-assesmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "namava-assesment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66321FBA2907FB28002B43A8 /* Build configuration list for PBXProject "namava-assesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66321FE72907FB2A002B43A8 /* Debug */,
+				66321FE82907FB2A002B43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66321FE92907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66321FEA2907FB2A002B43A8 /* Debug */,
+				66321FEB2907FB2A002B43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66321FEC2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66321FED2907FB2A002B43A8 /* Debug */,
+				66321FEE2907FB2A002B43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66321FEF2907FB2A002B43A8 /* Build configuration list for PBXNativeTarget "namava-assesmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66321FF02907FB2A002B43A8 /* Debug */,
+				66321FF12907FB2A002B43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66321FB72907FB28002B43A8 /* Project object */;
+}
