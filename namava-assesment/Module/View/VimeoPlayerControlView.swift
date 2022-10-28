@@ -10,18 +10,21 @@ import RxSwift
 import RxRelay
 import AVFoundation
 
-class VimeoPlayerControlView: UIStackView {
+class VimeoPlayerControlView: UIView {
     
     // properties
     weak var player: AVPlayer!
     var state = BehaviorRelay<RxPlayerState>(value: .Unknown)
+    var isSeekInProgress = BehaviorRelay<Bool>(value: false)
     private let bag = DisposeBag()
+    weak var stackViewHeightConstraint: NSLayoutConstraint!
     
     // components
-    private weak var playControl: UIButton!
+    private weak var stackView: UIStackView!
+    private weak var playControl: UIImageView!
     private weak var progressBar: ProgressView!
-    private weak var soundControl: UIButton!
-    weak var presentationControl: UIButton!
+    private weak var soundControl: UIImageView!
+    weak var presentationControl: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -41,56 +44,83 @@ extension VimeoPlayerControlView {
     
     private func setupView() {
         
-        axis = .horizontal
-        distribution = .equalSpacing
-        alignment = .top
-        autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        let stackView = UIStackView()
+        addSubview(stackView)
         
-        layoutMargins = UIEdgeInsets(top: 6, left: 12, bottom: 0, right: 12)
-        isLayoutMarginsRelativeArrangement = true
-        
-        
-        let playControl = UIButton()
-        addArrangedSubview(playControl)
+        stackView.translatesAutoresizingMaskIntoConstraints = true
+        let stackViewHeightConstraint = stackView.heightAnchor.constraint(equalToConstant: 32)
         NSLayoutConstraint.activate([
-            playControl.widthAnchor.constraint(equalToConstant: 22),
-            playControl.heightAnchor.constraint(equalToConstant: 22)
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackViewHeightConstraint,
+            stackView.topAnchor.constraint(equalTo: topAnchor)
         ])
         
-        playControl.setImage(UIImage(systemName: "play.circle"), for: .normal)
+        self.stackViewHeightConstraint = stackViewHeightConstraint
+        
+        stackView.axis = .horizontal
+        stackView.distribution = .fill
+        stackView.alignment = .center
+        stackView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        stackView.spacing = 6
+        
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 12)
+        
+        let playControl = UIImageView()
+        stackView.addArrangedSubview(playControl)
+        NSLayoutConstraint.activate([
+            playControl.widthAnchor.constraint(greaterThanOrEqualToConstant: 22),
+            playControl.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
+        ])
+        
+        playControl.image = UIImage(systemName: "play.circle")
+        playControl.contentMode = .scaleAspectFit
         playControl.tintColor = .darkGray
         
         self.playControl = playControl
         
         let progressBar = ProgressView()
-        addArrangedSubview(progressBar)
+        stackView.addArrangedSubview(progressBar)
         NSLayoutConstraint.activate([
-            progressBar.widthAnchor.constraint(equalTo: widthAnchor, constant: -112),
+            progressBar.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, constant: -130),
             progressBar.heightAnchor.constraint(equalToConstant: 16)
         ])
-        
+
         self.progressBar = progressBar
         
-        let soundControl = UIButton()
-        addArrangedSubview(soundControl)
+        let soundControlContainer = UIView()
+        stackView.addArrangedSubview(soundControlContainer)
         NSLayoutConstraint.activate([
-            soundControl.widthAnchor.constraint(equalToConstant: 22),
-            soundControl.heightAnchor.constraint(equalToConstant: 22)
+            soundControlContainer.widthAnchor.constraint(greaterThanOrEqualToConstant: 28),
+            soundControlContainer.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
         ])
         
-        soundControl.setImage(UIImage(systemName: "speaker.wave.2"), for: .normal)
+        let soundControl = UIImageView()
+        soundControlContainer.addSubview(soundControl)
+        soundControl.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            soundControl.leadingAnchor.constraint(equalTo: soundControlContainer.leadingAnchor, constant: 6),
+            soundControl.trailingAnchor.constraint(equalTo: soundControlContainer.trailingAnchor),
+            soundControl.topAnchor.constraint(equalTo: soundControlContainer.topAnchor),
+            soundControl.bottomAnchor.constraint(equalTo: soundControlContainer.bottomAnchor),
+        ])
+        
+        soundControl.image = UIImage(systemName: "speaker.wave.2")
+        soundControl.contentMode = .scaleAspectFit
         soundControl.tintColor = .darkGray
         
         self.soundControl = soundControl
         
-        let presentationControl = UIButton()
-        addArrangedSubview(presentationControl)
+        let presentationControl = UIImageView()
+        stackView.addArrangedSubview(presentationControl)
         NSLayoutConstraint.activate([
-            presentationControl.widthAnchor.constraint(equalToConstant: 22),
-            presentationControl.heightAnchor.constraint(equalToConstant: 22)
+            presentationControl.widthAnchor.constraint(greaterThanOrEqualToConstant: 22),
+            presentationControl.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
         ])
         
-        presentationControl.setImage(UIImage(systemName: "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left"), for: .normal)
+        presentationControl.image = UIImage(systemName: "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left")
+        presentationControl.contentMode = .scaleAspectFit
         presentationControl.tintColor = .darkGray
         
         self.presentationControl = presentationControl
@@ -136,9 +166,9 @@ extension VimeoPlayerControlView {
             
             if player.volume > 0 {
                 player.volume = 0
-                self.soundControl.setImage(UIImage(systemName: "speaker.slash"), for: .normal)
+                self.soundControl.image = UIImage(systemName: "speaker.slash")
             } else {
-                self.soundControl.setImage(UIImage(systemName: "speaker.wave.2"), for: .normal)
+                self.soundControl.image = UIImage(systemName: "speaker.wave.2")
                 player.volume = 0.5
             }
             
@@ -154,10 +184,10 @@ extension VimeoPlayerControlView {
             switch value {
             case .Playing:
                 self.player.play()
-                self.playControl.setImage(UIImage(systemName: "pause.circle"), for: .normal)
+                self.playControl.image = UIImage(systemName: "pause.circle")
             case .Paused:
                 self.player.pause()
-                self.playControl.setImage(UIImage(systemName: "play.circle"), for: .normal)
+                self.playControl.image = UIImage(systemName: "play.circle")
             case .Failed:
                 print("Failed")
             default:
@@ -188,7 +218,7 @@ extension VimeoPlayerControlView {
     
     private func addPlayerPeriodicTimeObserver() {
         
-        let interval = CMTime(seconds: 0.5, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
+        let interval = CMTime(seconds: 0.016, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
         let _ = player?.addPeriodicTimeObserver(forInterval: interval, queue: DispatchQueue.main, using: { [weak self] elapsedTime in
             self?.updateVideoPlayerSlider()
         })
@@ -201,9 +231,7 @@ extension VimeoPlayerControlView {
 extension VimeoPlayerControlView {
     
     func updateVideoPlayerSlider() {
-        guard let currentTime = player?.currentTime() else { return }
-        let currentTimeInSeconds = CMTimeGetSeconds(currentTime)
-        progressBar.setProgress(Float(currentTimeInSeconds), animated: false)
+        
         if let currentItem = player?.currentItem {
             let duration = currentItem.duration
             if (CMTIME_IS_INVALID(duration)) {
@@ -212,14 +240,15 @@ extension VimeoPlayerControlView {
             let currentTime = currentItem.currentTime()
             let progress = Float(CMTimeGetSeconds(currentTime) / CMTimeGetSeconds(duration))
             progressBar.setProgress(progress, animated: false)
-            
+
             if progress >= 1.0 {
                 state.accept(.Paused)
                 player.seek(to: .zero)
             }
-            
+
             progressBar.setNeedsLayout()
         }
+        
     }
     
 }

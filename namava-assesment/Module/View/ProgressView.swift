@@ -14,7 +14,7 @@ class ProgressView: UIProgressView {
         
         let maskLayerPath = UIBezierPath(roundedRect: bounds, cornerRadius: 0)
         let maskLayer = CAShapeLayer()
-        maskLayer.frame = self.bounds
+        maskLayer.frame = bounds
         maskLayer.path = maskLayerPath.cgPath
         layer.mask = maskLayer
         progressTintColor = .darkGray
@@ -23,6 +23,7 @@ class ProgressView: UIProgressView {
         layer.borderColor = UIColor.black.cgColor
         progressViewStyle = .bar
         
+        layer.frame.size.height = 16
     }
     
 }

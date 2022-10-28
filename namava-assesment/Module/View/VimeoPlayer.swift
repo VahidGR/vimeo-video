@@ -44,10 +44,10 @@ class VimeoPlayer: UIView {
         let controlHeightConstraint = controlView.heightAnchor.constraint(equalToConstant: 32)
         
         NSLayoutConstraint.activate([
-            controlView.widthAnchor.constraint(equalTo: widthAnchor),
+            controlView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            trailingAnchor.constraint(equalTo: controlView.trailingAnchor),
             controlHeightConstraint,
             controlView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            controlView.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         
         controlView.player = player
@@ -165,16 +165,15 @@ extension VimeoPlayer {
                 
 //                self.controlView.grow()
                 self.controlHeightConstraint.constant = 64
+                self.controlView.stackViewHeightConstraint.constant = 42
                 UIView.animate(withDuration: 0.2) {
-                    
                     self.controlView?.layoutIfNeeded()
                 }
             case false:
                 self.delegate.exitFullscreen(player: self)
-//                self.controlView.shrink()
                 self.controlHeightConstraint.constant = 32
+                self.controlView.stackViewHeightConstraint.constant = 32
                 UIView.animate(withDuration: 0.2) {
-                    
                     self.controlView?.layoutIfNeeded()
                 }
             }
