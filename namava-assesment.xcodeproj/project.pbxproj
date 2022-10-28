@@ -46,13 +46,11 @@
 		66DE13302907FDDB00ECF1C1 /* APIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE132D2907FDDB00ECF1C1 /* APIVersion.swift */; };
 		66DE1332290806F900ECF1C1 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE1331290806F900ECF1C1 /* ListViewModel.swift */; };
 		66DE1333290806F900ECF1C1 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE1331290806F900ECF1C1 /* ListViewModel.swift */; };
-		66DE1334290806F900ECF1C1 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE1331290806F900ECF1C1 /* ListViewModel.swift */; };
 		66DE13362908077600ECF1C1 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE13352908077600ECF1C1 /* VideoListItem.swift */; };
 		66DE13372908077600ECF1C1 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE13352908077600ECF1C1 /* VideoListItem.swift */; };
 		66DE13382908077600ECF1C1 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE13352908077600ECF1C1 /* VideoListItem.swift */; };
 		66DE133A29080AD900ECF1C1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133929080AD900ECF1C1 /* ListViewController.swift */; };
 		66DE133B29080AD900ECF1C1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133929080AD900ECF1C1 /* ListViewController.swift */; };
-		66DE133C29080AD900ECF1C1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133929080AD900ECF1C1 /* ListViewController.swift */; };
 		66DE133E29080DCE00ECF1C1 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133D29080DCE00ECF1C1 /* ListItemCell.swift */; };
 		66DE133F29080DCE00ECF1C1 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133D29080DCE00ECF1C1 /* ListItemCell.swift */; };
 		66DE134029080DCE00ECF1C1 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133D29080DCE00ECF1C1 /* ListItemCell.swift */; };
@@ -62,6 +60,46 @@
 		66E881B8290A28EA006985AA /* VimeoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B7290A28EA006985AA /* VimeoPlayer.swift */; };
 		66E881BA290A2916006985AA /* StatsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B9290A2916006985AA /* StatsStackView.swift */; };
 		66E881BC290A2938006985AA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881BB290A2938006985AA /* AuthenticationViewModel.swift */; };
+		66F70000290B851900D18F4C /* UIView+LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE3290B67BA00D18F4C /* UIView+LoadingIndicator.swift */; };
+		66F70001290B851A00D18F4C /* UIView+LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE3290B67BA00D18F4C /* UIView+LoadingIndicator.swift */; };
+		66F70002290B851C00D18F4C /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF5290B6ED400D18F4C /* UIViewController+UIAlert.swift */; };
+		66F70003290B851C00D18F4C /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF5290B6ED400D18F4C /* UIViewController+UIAlert.swift */; };
+		66F70004290B852300D18F4C /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFED290B6D6600D18F4C /* AppService.swift */; };
+		66F70005290B852400D18F4C /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFED290B6D6600D18F4C /* AppService.swift */; };
+		66F70006290B852600D18F4C /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE9290B6C6D00D18F4C /* PreferencesService.swift */; };
+		66F70007290B852600D18F4C /* PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE9290B6C6D00D18F4C /* PreferencesService.swift */; };
+		66F70008290B852A00D18F4C /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFEF290B6DA800D18F4C /* UserPreferences.swift */; };
+		66F70009290B852A00D18F4C /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFEF290B6DA800D18F4C /* UserPreferences.swift */; };
+		66F7000A290B853300D18F4C /* StatsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B9290A2916006985AA /* StatsStackView.swift */; };
+		66F7000B290B853300D18F4C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDF290B4DE100D18F4C /* ProgressView.swift */; };
+		66F7000C290B853300D18F4C /* VimeoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B7290A28EA006985AA /* VimeoPlayer.swift */; };
+		66F7000D290B853300D18F4C /* VimeoPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDD290B4D7B00D18F4C /* VimeoPlayerControlView.swift */; };
+		66F7000E290B853300D18F4C /* VimeoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */; };
+		66F7000F290B853400D18F4C /* StatsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B9290A2916006985AA /* StatsStackView.swift */; };
+		66F70010290B853400D18F4C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDF290B4DE100D18F4C /* ProgressView.swift */; };
+		66F70011290B853400D18F4C /* VimeoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B7290A28EA006985AA /* VimeoPlayer.swift */; };
+		66F70012290B853400D18F4C /* VimeoPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDD290B4D7B00D18F4C /* VimeoPlayerControlView.swift */; };
+		66F70013290B853400D18F4C /* VimeoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */; };
+		66F70016290B853A00D18F4C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE1331290806F900ECF1C1 /* ListViewModel.swift */; };
+		66F70017290B853A00D18F4C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B5290A2854006985AA /* DetailViewModel.swift */; };
+		66F70018290B853A00D18F4C /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881BB290A2938006985AA /* AuthenticationViewModel.swift */; };
+		66F70019290B853B00D18F4C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B5290A2854006985AA /* DetailViewModel.swift */; };
+		66F7001A290B853B00D18F4C /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881BB290A2938006985AA /* AuthenticationViewModel.swift */; };
+		66F7001C290B857C00D18F4C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE133929080AD900ECF1C1 /* ListViewController.swift */; };
+		66F7001D290B857C00D18F4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B3290A280D006985AA /* DetailViewController.swift */; };
+		66F7001E290B857D00D18F4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B3290A280D006985AA /* DetailViewController.swift */; };
+		66F7001F290B858500D18F4C /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFEB290B6D2300D18F4C /* AppStepper.swift */; };
+		66F70020290B858500D18F4C /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE6290B687A00D18F4C /* AppStep.swift */; };
+		66F70021290B858500D18F4C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653C47C2908613800F05F3C /* Coordinator.swift */; };
+		66F70022290B858600D18F4C /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFEB290B6D2300D18F4C /* AppStepper.swift */; };
+		66F70023290B858600D18F4C /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE6290B687A00D18F4C /* AppStep.swift */; };
+		66F70024290B858600D18F4C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653C47C2908613800F05F3C /* Coordinator.swift */; };
+		66F70025290B859100D18F4C /* SecretReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B0290973E6006985AA /* SecretReader.swift */; };
+		66F70026290B859200D18F4C /* SecretReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E881B0290973E6006985AA /* SecretReader.swift */; };
+		66F70027290B859800D18F4C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF8290B730700D18F4C /* TimeFormatter.swift */; };
+		66F70028290B859800D18F4C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF8290B730700D18F4C /* TimeFormatter.swift */; };
+		66F7002A290B85EB00D18F4C /* searchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70029290B85EB00D18F4C /* searchUITests.swift */; };
+		66F7002E290B863400D18F4C /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7002D290B863400D18F4C /* UtilTests.swift */; };
 		66F7FFD9290B4C7D00D18F4C /* VimeoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */; };
 		66F7FFDC290B4CAE00D18F4C /* AVPlayer+isPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDB290B4CAE00D18F4C /* AVPlayer+isPlaying.swift */; };
 		66F7FFDE290B4D7B00D18F4C /* VimeoPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDD290B4D7B00D18F4C /* VimeoPlayerControlView.swift */; };
@@ -76,6 +114,12 @@
 		66F7FFF2290B6DD000D18F4C /* Reactive+PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF1290B6DD000D18F4C /* Reactive+PreferencesService.swift */; };
 		66F7FFF6290B6ED400D18F4C /* UIViewController+UIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF5290B6ED400D18F4C /* UIViewController+UIAlert.swift */; };
 		66F7FFF9290B730700D18F4C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF8290B730700D18F4C /* TimeFormatter.swift */; };
+		66F7FFFA290B851000D18F4C /* Reactive+AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE1290B4E1100D18F4C /* Reactive+AVPlayer.swift */; };
+		66F7FFFB290B851000D18F4C /* Reactive+AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFE1290B4E1100D18F4C /* Reactive+AVPlayer.swift */; };
+		66F7FFFC290B851300D18F4C /* Reactive+PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF1290B6DD000D18F4C /* Reactive+PreferencesService.swift */; };
+		66F7FFFD290B851300D18F4C /* Reactive+PreferencesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF1290B6DD000D18F4C /* Reactive+PreferencesService.swift */; };
+		66F7FFFE290B851600D18F4C /* AVPlayer+isPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDB290B4CAE00D18F4C /* AVPlayer+isPlaying.swift */; };
+		66F7FFFF290B851700D18F4C /* AVPlayer+isPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFDB290B4CAE00D18F4C /* AVPlayer+isPlaying.swift */; };
 		8BF9836B6ADF0305FFE18972 /* Pods_namava_assesment_namava_assesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0617BD1519538602CDBDDE /* Pods_namava_assesment_namava_assesmentUITests.framework */; };
 		E833B26D4DF5607302EAB1E2 /* Pods_namava_assesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B00DF4CBB411D17D96050A /* Pods_namava_assesment.framework */; };
 /* End PBXBuildFile section */
@@ -135,6 +179,8 @@
 		66E881B7290A28EA006985AA /* VimeoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoPlayer.swift; sourceTree = "<group>"; };
 		66E881B9290A2916006985AA /* StatsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStackView.swift; sourceTree = "<group>"; };
 		66E881BB290A2938006985AA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		66F70029290B85EB00D18F4C /* searchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchUITests.swift; sourceTree = "<group>"; };
+		66F7002D290B863400D18F4C /* UtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTests.swift; sourceTree = "<group>"; };
 		66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoThumbnail.swift; sourceTree = "<group>"; };
 		66F7FFDB290B4CAE00D18F4C /* AVPlayer+isPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+isPlaying.swift"; sourceTree = "<group>"; };
 		66F7FFDD290B4D7B00D18F4C /* VimeoPlayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoPlayerControlView.swift; sourceTree = "<group>"; };
@@ -251,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */,
+				66F7002D290B863400D18F4C /* UtilTests.swift */,
 			);
 			path = "namava-assesmentTests";
 			sourceTree = "<group>";
@@ -260,6 +307,7 @@
 			children = (
 				66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */,
 				66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */,
+				66F70029290B85EB00D18F4C /* searchUITests.swift */,
 			);
 			path = "namava-assesmentUITests";
 			sourceTree = "<group>";
@@ -698,18 +746,40 @@
 			files = (
 				66DE13372908077600ECF1C1 /* VideoListItem.swift in Sources */,
 				66DE13132907FCEB00ECF1C1 /* WebserviceRequestURLs.swift in Sources */,
+				66F7FFFE290B851600D18F4C /* AVPlayer+isPlaying.swift in Sources */,
 				66DE13222907FCEB00ECF1C1 /* NetworkError.swift in Sources */,
 				66321FDA2907FB2A002B43A8 /* namava_assesmentTests.swift in Sources */,
+				66F70023290B858600D18F4C /* AppStep.swift in Sources */,
+				66F7000B290B853300D18F4C /* ProgressView.swift in Sources */,
+				66F7002E290B863400D18F4C /* UtilTests.swift in Sources */,
+				66F70004290B852300D18F4C /* AppService.swift in Sources */,
+				66F70002290B851C00D18F4C /* UIViewController+UIAlert.swift in Sources */,
 				66DE132F2907FDDB00ECF1C1 /* APIVersion.swift in Sources */,
+				66F7000E290B853300D18F4C /* VimeoThumbnail.swift in Sources */,
+				66F7001A290B853B00D18F4C /* AuthenticationViewModel.swift in Sources */,
 				66DE13192907FCEB00ECF1C1 /* Webservice.swift in Sources */,
 				66DE131C2907FCEB00ECF1C1 /* Resource.swift in Sources */,
+				66F7FFFC290B851300D18F4C /* Reactive+PreferencesService.swift in Sources */,
 				66DE131F2907FCEB00ECF1C1 /* HttpMethod.swift in Sources */,
+				66F70026290B859200D18F4C /* SecretReader.swift in Sources */,
 				66DE133F29080DCE00ECF1C1 /* ListItemCell.swift in Sources */,
+				66F70024290B858600D18F4C /* Coordinator.swift in Sources */,
 				66DE13162907FCEB00ECF1C1 /* ImageLoader.swift in Sources */,
 				66DE13252907FCEB00ECF1C1 /* WebserviceBaseURL.swift in Sources */,
+				66F7000A290B853300D18F4C /* StatsStackView.swift in Sources */,
+				66F70022290B858600D18F4C /* AppStepper.swift in Sources */,
+				66F70028290B859800D18F4C /* TimeFormatter.swift in Sources */,
+				66F70000290B851900D18F4C /* UIView+LoadingIndicator.swift in Sources */,
+				66F7000D290B853300D18F4C /* VimeoPlayerControlView.swift in Sources */,
+				66F70006290B852600D18F4C /* PreferencesService.swift in Sources */,
+				66F7000C290B853300D18F4C /* VimeoPlayer.swift in Sources */,
 				66DE132B2907FDC700ECF1C1 /* URL+path.swift in Sources */,
+				66F70019290B853B00D18F4C /* DetailViewModel.swift in Sources */,
 				66DE133B29080AD900ECF1C1 /* ListViewController.swift in Sources */,
+				66F7FFFA290B851000D18F4C /* Reactive+AVPlayer.swift in Sources */,
+				66F7001E290B857D00D18F4C /* DetailViewController.swift in Sources */,
 				66DE1333290806F900ECF1C1 /* ListViewModel.swift in Sources */,
+				66F70008290B852A00D18F4C /* UserPreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,17 +787,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F70025290B859100D18F4C /* SecretReader.swift in Sources */,
+				66F70027290B859800D18F4C /* TimeFormatter.swift in Sources */,
 				66DE13142907FCEB00ECF1C1 /* WebserviceRequestURLs.swift in Sources */,
+				66F70001290B851A00D18F4C /* UIView+LoadingIndicator.swift in Sources */,
+				66F70017290B853A00D18F4C /* DetailViewModel.swift in Sources */,
+				66F70016290B853A00D18F4C /* ListViewModel.swift in Sources */,
 				66DE13382908077600ECF1C1 /* VideoListItem.swift in Sources */,
+				66F70013290B853400D18F4C /* VimeoThumbnail.swift in Sources */,
+				66F70018290B853A00D18F4C /* AuthenticationViewModel.swift in Sources */,
+				66F70020290B858500D18F4C /* AppStep.swift in Sources */,
+				66F7FFFF290B851700D18F4C /* AVPlayer+isPlaying.swift in Sources */,
+				66F7001C290B857C00D18F4C /* ListViewController.swift in Sources */,
+				66F70021290B858500D18F4C /* Coordinator.swift in Sources */,
 				66DE13232907FCEB00ECF1C1 /* NetworkError.swift in Sources */,
-				66DE1334290806F900ECF1C1 /* ListViewModel.swift in Sources */,
+				66F7FFFB290B851000D18F4C /* Reactive+AVPlayer.swift in Sources */,
+				66F70003290B851C00D18F4C /* UIViewController+UIAlert.swift in Sources */,
+				66F70007290B852600D18F4C /* PreferencesService.swift in Sources */,
 				66DE13262907FCEB00ECF1C1 /* WebserviceBaseURL.swift in Sources */,
 				66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */,
-				66DE133C29080AD900ECF1C1 /* ListViewController.swift in Sources */,
+				66F7001F290B858500D18F4C /* AppStepper.swift in Sources */,
+				66F70010290B853400D18F4C /* ProgressView.swift in Sources */,
 				66DE13172907FCEB00ECF1C1 /* ImageLoader.swift in Sources */,
 				66DE13202907FCEB00ECF1C1 /* HttpMethod.swift in Sources */,
+				66F70011290B853400D18F4C /* VimeoPlayer.swift in Sources */,
+				66F7001D290B857C00D18F4C /* DetailViewController.swift in Sources */,
+				66F70012290B853400D18F4C /* VimeoPlayerControlView.swift in Sources */,
+				66F7FFFD290B851300D18F4C /* Reactive+PreferencesService.swift in Sources */,
+				66F7000F290B853400D18F4C /* StatsStackView.swift in Sources */,
+				66F7002A290B85EB00D18F4C /* searchUITests.swift in Sources */,
 				66DE131D2907FCEB00ECF1C1 /* Resource.swift in Sources */,
 				66DE13302907FDDB00ECF1C1 /* APIVersion.swift in Sources */,
+				66F70009290B852A00D18F4C /* UserPreferences.swift in Sources */,
+				66F70005290B852400D18F4C /* AppService.swift in Sources */,
 				66DE131A2907FCEB00ECF1C1 /* Webservice.swift in Sources */,
 				66DE132C2907FDC700ECF1C1 /* URL+path.swift in Sources */,
 				66321FE42907FB2A002B43A8 /* namava_assesmentUITests.swift in Sources */,
