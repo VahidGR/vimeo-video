@@ -25,12 +25,10 @@ class UtilTests: XCTestCase {
     }
 
     func testSecretreader() throws {
-        
-        XCTAssertNotNil(SecretReader.accountName)
-        XCTAssertNotNil(SecretReader.clientSecret)
-        XCTAssertNotNil(SecretReader.clientIdentifier)
-        XCTAssertNotNil(SecretReader.endpointToken)
-        
+        XCTAssertNotNil(SecretReader.value(for: .endpointToken))
+        XCTAssertNotNil(SecretReader.value(for: .clientSecret))
+        XCTAssertNotNil(SecretReader.value(for: .clientIdentifier))
+        XCTAssertNotNil(SecretReader.value(for: .accountName))
     }
 
     func testPerformanceExample() throws {
