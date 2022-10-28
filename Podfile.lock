@@ -1,26 +1,46 @@
 PODS:
+  - HCVimeoVideoExtractor (0.0.1)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
+  - RxFlow (2.13.0):
+    - RxCocoa (>= 6.0.0)
+    - RxSwift (>= 6.0.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - VimeoNetworking (4.1.0)
 
 DEPENDENCIES:
+  - HCVimeoVideoExtractor
   - RxCocoa
+  - RxFlow
+  - RxGesture
   - RxSwift
+  - VimeoNetworking
 
 SPEC REPOS:
   trunk:
+    - HCVimeoVideoExtractor
     - RxCocoa
+    - RxFlow
+    - RxGesture
     - RxRelay
     - RxSwift
+    - VimeoNetworking
 
 SPEC CHECKSUMS:
+  HCVimeoVideoExtractor: d3c251280f7027ffd324266e1930b3618e0adb46
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  VimeoNetworking: faca97d7b158a74d96afb460011e2dc69651c051
 
-PODFILE CHECKSUM: 2599308c85cbcdf705fb5e5d3a3800e4a4464abb
+PODFILE CHECKSUM: 40e3eb75005ea64469003da509146287ff27903a
 
 COCOAPODS: 1.11.3

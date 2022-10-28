@@ -8,7 +8,11 @@ target 'namava-assesment' do
   # Pods for namava-assesment
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  pod 'RxFlow'
+  pod 'RxGesture'
+  pod 'VimeoNetworking'
+  pod 'HCVimeoVideoExtractor'
+  
   target 'namava-assesmentTests' do
     inherit! :search_paths
     # Pods for testing
