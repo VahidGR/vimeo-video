@@ -29,13 +29,6 @@ struct Webservice {
         let configuration: URLSessionConfiguration = .default
         // add default headers
         configuration.httpAdditionalHeaders = resource.headers
-        if resource.requireAuthentication {
-            if let token = ACCESS_TOKEN { // todo: token
-                var header = resource.headers
-                header["Authorization"] = "Bearer \(token)"
-                configuration.httpAdditionalHeaders = header
-            }
-        }
         
         let session = URLSession(configuration: configuration)
         
