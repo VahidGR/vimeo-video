@@ -11,5 +11,4 @@ struct Resource<T: Codable> {
     let url: URL
     var headers: [String: String] = ["Content-Type": "application/json"]
     var method: HttpMethod = .get([])
-    var requireAuthentication: Bool = true
 }
