@@ -11,7 +11,8 @@ enum SecretReader: String {
     case clientIdentifier = "CLIENT_IDENTIFIER"
     case clientSecret = "CLIENT_SECRETS"
     case endpointToken = "ENDPOINT_TOKEN"
-    
+    case accountName = "ACCOUNT_NAME"
+
     static func value(for secret: SecretReader) -> String {
         guard let infoDictionary = Bundle.main.infoDictionary,
               let value = infoDictionary[secret.rawValue] as? String
