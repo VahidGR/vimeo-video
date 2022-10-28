@@ -49,11 +49,6 @@ class Coordinator: Flow {
 
     private func navigateToListScreen(authenticated: Bool) -> FlowContributors {
         let viewController = ListViewController()
-        if authenticated == false {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                viewController.presentAlert(message: "Could not authenticate", actionText: "Retry")
-            }
-        }
         self.rootViewController.pushViewController(viewController, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: viewController, withNextStepper: viewController.viewModel))
     }
