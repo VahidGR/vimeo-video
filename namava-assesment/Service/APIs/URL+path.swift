@@ -14,8 +14,8 @@ extension URL {
         appendPathComponent(path)
     }
     
-    init!(image id: String) {
-        self.init(string: WebserviceBaseURL(id: id).path)
+    init!(image path: String) {
+        self.init(string: WebserviceBaseURL(path: path).path)
         appendPathComponent(path)
     }
     

@@ -11,25 +11,26 @@ enum WebserviceBaseURL {
     
     case dev(version: APIVersion?)
     case production(version: APIVersion?)
-    case image(id: String)
+    case image(path: String)
     
     var path: String {
+        let endpointToken = SecretReader.value(for: .endpointToken)
         switch self {
             
         case .dev(let version):
             if let version = version {
-                return "https://api.dev.straiberry.com/api/v\(version.rawValue)/"
+                return "https://v\(version.rawValue).nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
             }
-            return "https://api.dev.straiberry.com/api/"
+            return "https://v1.nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
             
         case .production(let version):
             if let version = version {
-                return "https://api.straiberry.com/api/v\(version.rawValue)/"
+                return "https://v\(version.rawValue).nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
             }
-            return "https://api.straiberry.com/api/"
+            return "https://v1.nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
             
-        case .image(let id):
-            return "https://api.dev.straiberry.com/\(id)"
+        case .image(let path):
+            return "https://i.vimeocdn.com\(path)"
         }
     }
     
@@ -41,8 +42,8 @@ enum WebserviceBaseURL {
         #endif
     }
     
-    init(id: String) {
-        self = .image(id: id)
+    init(path: String) {
+        self = .image(path: path)
     }
     
 }
