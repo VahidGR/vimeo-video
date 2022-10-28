@@ -51,6 +51,28 @@ class DetailViewController: UIViewController, VideoContainable {
         setupViews()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let uri = viewModel.video.uri, let url = URL(string: uri) {
+            HCVimeoVideoExtractor.fetchVideoURLFrom(url: url) { [weak self] video, error in
+                if error == nil, let videoURL = video?.videoURL[.Quality360p]?.absoluteString {
+                    let duration = TimeFormatter().getTimeFormat(off: self?.viewModel.video.duration)
+                    Task {
+                        let image = try? await ImageLoader().fetch(video?.thumbnailURL[.Quality640]?.absoluteString)
+                        self?.player.setupVideoPlayer(with: videoURL, thumbnailImage: image, duration: duration)
+                    }
+                } else {
+                    Task {
+                        let image = try? await ImageLoader().fetch(video?.thumbnailURL[.Quality640]?.absoluteString)
+                        self?.player.brokenURL(thumbnailImage: image)
+                    }
+                }
+            }
+        }
+        
+    }
+    
 }
 
 // MARK: - UI configurations
@@ -97,22 +119,7 @@ extension DetailViewController {
         NSLayoutConstraint.activate(playerCompactConstraints)
         
         player.delegate = self
-        if let uri = viewModel.video.uri, let url = URL(string: uri) {
-            HCVimeoVideoExtractor.fetchVideoURLFrom(url: url) { [weak self] video, error in
-                if error == nil, let videoURL = video?.videoURL[.Quality360p]?.absoluteString {
-                    let duration = TimeFormatter().getTimeFormat(off: self?.viewModel.video.duration)
-                    Task {
-                        let image = try? await ImageLoader().fetch(video?.thumbnailURL[.Quality640]?.absoluteString)
-                        player.setupVideoPlayer(with: videoURL, thumbnailImage: image, duration: duration)
-                    }
-                } else {
-                    Task {
-                        let image = try? await ImageLoader().fetch(video?.thumbnailURL[.Quality640]?.absoluteString)
-                        player.brokenURL(thumbnailImage: image)
-                    }
-                }
-            }
-        }
+        player.accessibilityIdentifier = "vimeo-player"
         
         let statsStackView = StatsStackView()
         stackView.addArrangedSubview(statsStackView)
