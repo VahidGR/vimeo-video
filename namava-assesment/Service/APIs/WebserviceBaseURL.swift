@@ -15,19 +15,20 @@ enum WebserviceBaseURL {
     
     var path: String {
         let endpointToken = SecretReader.value(for: .endpointToken)
+        let accountName = SecretReader.value(for: .accountName)
         switch self {
             
         case .dev(let version):
             if let version = version {
-                return "https://v\(version.rawValue).nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
+                return "https://v\(version.rawValue).nocodeapi.com/\(accountName)/vimeo/\(endpointToken)"
             }
-            return "https://v1.nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
+            return "https://v1.nocodeapi.com/\(accountName)/vimeo/\(endpointToken)"
             
         case .production(let version):
             if let version = version {
-                return "https://v\(version.rawValue).nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
+                return "https://v\(version.rawValue).nocodeapi.com/\(accountName)/vimeo/\(endpointToken)"
             }
-            return "https://v1.nocodeapi.com/vahidgr/vimeo/\(endpointToken)"
+            return "https://v1.nocodeapi.com/vahidgr/\(accountName)/\(endpointToken)"
             
         case .image(let path):
             return "https://i.vimeocdn.com\(path)"
