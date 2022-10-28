@@ -8,6 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-CLIENT_IDENTIFIER = 593f8ccfcf8d1a556f9cabd3eaaeebfb37e9efa4
-CLIENT_SECRETS = skzuubD9nUvXF3tOBnLwpGeu0yG4y25fg7aAaET4MurDMUH+xrcnQoCM52ls8kB1S0gheehUwEuK4G5LQGAZRjIGZ5zJvBEcazpE4cbk5p6VHa/q9sG5gt4FWedfYYLT
-ENDPOINT_TOKEN = fsXnpMGIUtqzUipq
+CLIENT_IDENTIFIER = bae34d8888d435b9d3ba41c0af57eaf0bec1f17e
+CLIENT_SECRETS = iGkng15XT2hR0r5AQJYiETx0/M49IRY4Z3OfGXQisd5J4U9Pa7tGSOgoST71eNAzcSWcalkb6CLlCYRWP+8ptq0Pd56csqMPUUGzlirmVNfko+h/4bbFwuidDIKlRvqk
+ENDPOINT_TOKEN = MbyKHQOPJggbujDR
+ACCOUNT_NAME = rottingmummy
