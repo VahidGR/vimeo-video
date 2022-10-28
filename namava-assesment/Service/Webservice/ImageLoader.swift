@@ -14,9 +14,7 @@ class ImageLoader {
         guard let path = path else {
             return nil
         }
-        guard let url = URL(string: path) else {
-            return nil
-        }
+        guard let url = URL(string: path) else { return nil}
         let request = URLRequest(url: url)
         return try await fetch(request)
     }
