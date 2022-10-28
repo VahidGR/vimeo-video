@@ -37,16 +37,6 @@ class Coordinator: Flow {
         
     }
     
-    private func navigateOrInitiate(viewController: UIViewController) {
-        if rootViewController.viewControllers.isEmpty {
-            self.rootViewController.setViewControllers([viewController], animated: false)
-        }
-        else
-        {
-            self.rootViewController.pushViewController(viewController, animated: true)
-        }
-    }
-
     private func navigateToListScreen(authenticated: Bool) -> FlowContributors {
         let viewController = ListViewController()
         self.rootViewController.pushViewController(viewController, animated: true)
