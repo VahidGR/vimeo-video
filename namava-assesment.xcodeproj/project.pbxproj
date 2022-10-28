@@ -319,7 +319,6 @@
 				66321FC42907FB28002B43A8 /* SceneDelegate.swift */,
 				66321FC82907FB28002B43A8 /* Main.storyboard */,
 				66321FCD2907FB2A002B43A8 /* LaunchScreen.storyboard */,
-				66E881B0290973E6006985AA /* SecretReader.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -457,6 +456,7 @@
 		66F7FFF7290B72FF00D18F4C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				66E881B0290973E6006985AA /* SecretReader.swift */,
 				66F7FFF8290B730700D18F4C /* TimeFormatter.swift */,
 			);
 			path = Util;
