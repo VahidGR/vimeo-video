@@ -110,6 +110,7 @@ extension ListViewController {
         ])
         
         searchBar.searchTextField.delegate = self
+        searchBar.accessibilityIdentifier = "searchbar"
         
         self.searchBar = searchBar
         
@@ -134,6 +135,7 @@ extension ListViewController {
         
         collectionView.register(ListItemCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.backgroundColor = .clear
+        collectionView.accessibilityIdentifier = "items-collection"
         
         self.collectionView = collectionView
         
