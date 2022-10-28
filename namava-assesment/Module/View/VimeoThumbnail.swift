@@ -53,7 +53,7 @@ class VimeoThumbnail: UIView {
             playIcon.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         
-        playIcon.image = UIImage(systemName: "play.circle.fill")?.withRenderingMode(.alwaysTemplate)
+        playIcon.image = .init(systemImage: .filledPlay)?.withRenderingMode(.alwaysTemplate)
         playIcon.tintColor = .lightGray
         
         if isBroken {

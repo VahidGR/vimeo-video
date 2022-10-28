@@ -74,7 +74,7 @@ extension VimeoPlayerControlView {
             playControl.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
         ])
         
-        playControl.image = UIImage(systemName: "play.circle")
+        playControl.image = .init(systemImage: .play)?.withRenderingMode(.alwaysTemplate)
         playControl.contentMode = .scaleAspectFit
         playControl.tintColor = .darkGray
         
@@ -106,7 +106,7 @@ extension VimeoPlayerControlView {
             soundControl.bottomAnchor.constraint(equalTo: soundControlContainer.bottomAnchor),
         ])
         
-        soundControl.image = UIImage(systemName: "speaker.wave.2")
+        soundControl.image = .init(systemImage: .sound)?.withRenderingMode(.alwaysTemplate)
         soundControl.contentMode = .scaleAspectFit
         soundControl.tintColor = .darkGray
         
@@ -119,7 +119,7 @@ extension VimeoPlayerControlView {
             presentationControl.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
         ])
         
-        presentationControl.image = UIImage(systemName: "arrow.up.left.and.down.right.and.arrow.up.right.and.down.left")
+        presentationControl.image = .init(systemImage: .fullscreen)?.withRenderingMode(.alwaysTemplate)
         presentationControl.contentMode = .scaleAspectFit
         presentationControl.tintColor = .darkGray
         
@@ -166,9 +166,9 @@ extension VimeoPlayerControlView {
             
             if player.volume > 0 {
                 player.volume = 0
-                self.soundControl.image = UIImage(systemName: "speaker.slash")
+                self.soundControl.image = .init(systemImage: .mute)
             } else {
-                self.soundControl.image = UIImage(systemName: "speaker.wave.2")
+                self.soundControl.image = .init(systemImage: .sound)
                 player.volume = 0.5
             }
             
@@ -184,10 +184,10 @@ extension VimeoPlayerControlView {
             switch value {
             case .Playing:
                 self.player.play()
-                self.playControl.image = UIImage(systemName: "pause.circle")
+                self.playControl.image = .init(systemImage: .pause)
             case .Paused:
                 self.player.pause()
-                self.playControl.image = UIImage(systemName: "play.circle")
+                self.playControl.image = .init(systemImage: .play)
             case .Failed:
                 print("Failed")
             default:

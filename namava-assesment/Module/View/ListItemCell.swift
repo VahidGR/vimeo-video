@@ -55,6 +55,8 @@ class ListItemCell: UICollectionViewCell {
     // add subviews with activated constraints
     private func setupView() {
         
+        isAccessibilityElement = true
+        
         let imageView = UIImageView()
         contentView.addSubview(imageView)
         
