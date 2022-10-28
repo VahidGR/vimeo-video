@@ -10,6 +10,6 @@ import Foundation
 // MARK: - URL paths
 extension URL {
     static var videoListItems: URL {
-        return URL(path: "")
+        return URL(path: "/search")
     }
 }
