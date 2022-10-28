@@ -28,22 +28,14 @@ class searchUITests: XCTestCase {
         app.launchArguments = ["enable-testing"]
         app.launch()
         
-        let searchBar = app.searchFields.element
-        let textField = app.textFields.element
-        textField.tap()
+        let searchBar = app.otherElements.matching(identifier: "searchbar").element
+        searchBar.tap()
+        searchBar.typeText("cat")
         
-        app.keys["C"].tap() // if failes here, try to toggle software keyboard on your simulator
-        app.keys["a"].tap()
-        app.keys["t"].tap()
+        app.keyboards.buttons["Search"].tap()
         
-        app.keyboards.buttons["Return"].tap()
-        
-        let firstItem = app.collectionViews.children(matching: .any).element(boundBy: 0)
-        let itemExists = firstItem.waitForExistence(timeout: 10.0)
-        if itemExists {
-            firstItem.tap()
-        }
-        
+        let collectionView = app.otherElements.matching(identifier: "items-collection")
+        let cell = collectionView.element.children(matching: .any).element(boundBy: 0)
         
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
