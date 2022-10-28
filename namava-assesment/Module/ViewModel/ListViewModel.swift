@@ -19,6 +19,7 @@ struct ListViewModel: Stepper, ListViewModelProtocol {
     typealias Item = VideoListData
     var items = PublishSubject<[VideoListData]>()
     var isLoading = BehaviorRelay<Bool>(value: false)
+    var error = BehaviorRelay<String?>(value: nil)
     
     var steps = PublishRelay<Step>()
     
@@ -32,11 +33,12 @@ struct ListViewModel: Stepper, ListViewModelProtocol {
                 self.items.onNext(items.data ?? [])
             case .failure(let error):
                 print(error.localizedDescription)
+                self.error.accept(error.localizedDescription)
             }
         }
     }
     
-    func pick (video: VideoListData) {
+    func pick(video: VideoListData) {
         self.steps.accept(AppStep.showDetails(video: video))
     }
     
