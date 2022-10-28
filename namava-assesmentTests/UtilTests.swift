@@ -24,6 +24,15 @@ class UtilTests: XCTestCase {
         XCTAssertEqual(formattedTime, "06:54")
     }
 
+    func testSecretreader() throws {
+        
+        XCTAssertNotNil(SecretReader.accountName)
+        XCTAssertNotNil(SecretReader.clientSecret)
+        XCTAssertNotNil(SecretReader.clientIdentifier)
+        XCTAssertNotNil(SecretReader.endpointToken)
+        
+    }
+
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {
