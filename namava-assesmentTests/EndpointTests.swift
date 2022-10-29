@@ -45,6 +45,25 @@ class EndpointTests: XCTestCase {
         let endpointToken = "MbyKHQOPJggbujDR"
         XCTAssertEqual(request.url, URL(string: "https://v1.nocodeapi.com/\(accountName)/vimeo/\(endpointToken)/search?q=query&page=1&perPage=1"))
     }
+    
+    func testAPICall() async throws {
+        
+        let query = "query"
+        let page = "1"
+        let perPage = "1"
+        
+        let resource = VideoList.resource(for: query, page: page, perPage: perPage)
+        
+        let result = try await Webservice().load(resource)
+        
+        switch result {
+        case .success(let response):
+            print(response)
+        case .failure(_):
+            assertionFailure()
+        }
+        
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
