@@ -34,8 +34,14 @@ class searchUITests: XCTestCase {
         
         app.keyboards.buttons["Search"].tap()
         
-        let collectionView = app.otherElements.matching(identifier: "items-collection")
+        sleep(20)
+        
+        let collectionView = app.collectionViews//.otherElements.matching(identifier: "items-collection")
         let cell = collectionView.element.children(matching: .any).element(boundBy: 0)
+        
+        cell.tap()
+        
+        sleep(5)
         
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
