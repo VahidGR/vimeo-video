@@ -38,7 +38,7 @@ VimeoPlayer instance is a custom View class that contains a AVPlayer and uses it
 
 Our vimeo player uses Rx SDKs to observe user behaviour such as gestures and video completion status, to act upon gestures and reset video on an ending event.
 
-An optimization is made for videos to better prepare and for AVPlayer to load video faster. It sets AVPlayer's automaticallyWaitsToMinimizeStalling = false
+An optimization is made for videos to better prepare and for AVPlayer to load video faster. It sets AVPlayer's `automaticallyWaitsToMinimizeStalling = false`
 
 To explain why, a qoute from Apple developer documentation
 > A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling.
