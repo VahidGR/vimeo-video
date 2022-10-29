@@ -41,6 +41,6 @@ Our vimeo player uses Rx SDKs to observe user behaviour such as gestures and vid
 An optimization is made for videos to better prepare and for AVPlayer to load video faster. It sets AVPlayer's automaticallyWaitsToMinimizeStalling = false
 
 To explain why, a qoute from Apple developer documentation
-> "A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling."
+> A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling.
 
 It's an optimization for user experience, where video player component loads faster so that user can see our whole UI in a faster manner.
