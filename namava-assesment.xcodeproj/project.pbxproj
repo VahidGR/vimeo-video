@@ -100,9 +100,6 @@
 		66F70028290B859800D18F4C /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7FFF8290B730700D18F4C /* TimeFormatter.swift */; };
 		66F7002A290B85EB00D18F4C /* searchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70029290B85EB00D18F4C /* searchUITests.swift */; };
 		66F7002E290B863400D18F4C /* UtilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7002D290B863400D18F4C /* UtilTests.swift */; };
-		66F70031290BAAA300D18F4C /* ListPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70030290BAAA300D18F4C /* ListPlaceholder.swift */; };
-		66F70032290BAAA300D18F4C /* ListPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70030290BAAA300D18F4C /* ListPlaceholder.swift */; };
-		66F70033290BAAA300D18F4C /* ListPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70030290BAAA300D18F4C /* ListPlaceholder.swift */; };
 		66F70035290BAFA000D18F4C /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70034290BAFA000D18F4C /* ImageCollection.swift */; };
 		66F70036290BAFA000D18F4C /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70034290BAFA000D18F4C /* ImageCollection.swift */; };
 		66F70037290BAFA000D18F4C /* ImageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F70034290BAFA000D18F4C /* ImageCollection.swift */; };
@@ -190,7 +187,6 @@
 		66E881BB290A2938006985AA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		66F70029290B85EB00D18F4C /* searchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchUITests.swift; sourceTree = "<group>"; };
 		66F7002D290B863400D18F4C /* UtilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTests.swift; sourceTree = "<group>"; };
-		66F70030290BAAA300D18F4C /* ListPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceholder.swift; sourceTree = "<group>"; };
 		66F70034290BAFA000D18F4C /* ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollection.swift; sourceTree = "<group>"; };
 		66F70038290BAFEB00D18F4C /* UIImage+ImageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageCollection.swift"; sourceTree = "<group>"; };
 		66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VimeoThumbnail.swift; sourceTree = "<group>"; };
@@ -354,7 +350,6 @@
 				66F7FFDF290B4DE100D18F4C /* ProgressView.swift */,
 				66F7FFD8290B4C7D00D18F4C /* VimeoThumbnail.swift */,
 				66E881B9290A2916006985AA /* StatsStackView.swift */,
-				66F70030290BAAA300D18F4C /* ListPlaceholder.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -735,7 +730,6 @@
 				66DE131E2907FCEB00ECF1C1 /* HttpMethod.swift in Sources */,
 				66E881B4290A280D006985AA /* DetailViewController.swift in Sources */,
 				66DE131B2907FCEB00ECF1C1 /* Resource.swift in Sources */,
-				66F70031290BAAA300D18F4C /* ListPlaceholder.swift in Sources */,
 				66F7FFDE290B4D7B00D18F4C /* VimeoPlayerControlView.swift in Sources */,
 				6653C47D2908613800F05F3C /* Coordinator.swift in Sources */,
 				66DE132E2907FDDB00ECF1C1 /* APIVersion.swift in Sources */,
@@ -781,7 +775,6 @@
 				66F7FFFC290B851300D18F4C /* Reactive+PreferencesService.swift in Sources */,
 				66DE131F2907FCEB00ECF1C1 /* HttpMethod.swift in Sources */,
 				66F70026290B859200D18F4C /* SecretReader.swift in Sources */,
-				66F70032290BAAA300D18F4C /* ListPlaceholder.swift in Sources */,
 				66DE133F29080DCE00ECF1C1 /* ListItemCell.swift in Sources */,
 				66F70024290B858600D18F4C /* Coordinator.swift in Sources */,
 				66DE13162907FCEB00ECF1C1 /* ImageLoader.swift in Sources */,
@@ -829,7 +822,6 @@
 				66DE13262907FCEB00ECF1C1 /* WebserviceBaseURL.swift in Sources */,
 				66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */,
 				66F7001F290B858500D18F4C /* AppStepper.swift in Sources */,
-				66F70033290BAAA300D18F4C /* ListPlaceholder.swift in Sources */,
 				66F70010290B853400D18F4C /* ProgressView.swift in Sources */,
 				66DE13172907FCEB00ECF1C1 /* ImageLoader.swift in Sources */,
 				66DE13202907FCEB00ECF1C1 /* HttpMethod.swift in Sources */,
