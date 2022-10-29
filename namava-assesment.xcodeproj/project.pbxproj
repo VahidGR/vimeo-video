@@ -17,6 +17,7 @@
 		66321FE42907FB2A002B43A8 /* namava_assesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */; };
 		66321FE62907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */; };
 		6653C47D2908613800F05F3C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653C47C2908613800F05F3C /* Coordinator.swift */; };
+		665EF200290D228E00DBFA7A /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665EF1FF290D228E00DBFA7A /* EndpointTests.swift */; };
 		66DE13122907FCEB00ECF1C1 /* WebserviceRequestURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE130B2907FCEB00ECF1C1 /* WebserviceRequestURLs.swift */; };
 		66DE13132907FCEB00ECF1C1 /* WebserviceRequestURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE130B2907FCEB00ECF1C1 /* WebserviceRequestURLs.swift */; };
 		66DE13142907FCEB00ECF1C1 /* WebserviceRequestURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DE130B2907FCEB00ECF1C1 /* WebserviceRequestURLs.swift */; };
@@ -165,6 +166,7 @@
 		66321FE32907FB2A002B43A8 /* namava_assesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITests.swift; sourceTree = "<group>"; };
 		66321FE52907FB2A002B43A8 /* namava_assesmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = namava_assesmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6653C47C2908613800F05F3C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		665EF1FF290D228E00DBFA7A /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		66DE130B2907FCEB00ECF1C1 /* WebserviceRequestURLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceRequestURLs.swift; sourceTree = "<group>"; };
 		66DE130C2907FCEB00ECF1C1 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		66DE130D2907FCEB00ECF1C1 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			children = (
 				66321FD92907FB2A002B43A8 /* namava_assesmentTests.swift */,
 				66F7002D290B863400D18F4C /* UtilTests.swift */,
+				665EF1FF290D228E00DBFA7A /* EndpointTests.swift */,
 			);
 			path = "namava-assesmentTests";
 			sourceTree = "<group>";
@@ -769,6 +772,7 @@
 				66F70002290B851C00D18F4C /* UIViewController+UIAlert.swift in Sources */,
 				66DE132F2907FDDB00ECF1C1 /* APIVersion.swift in Sources */,
 				66F7000E290B853300D18F4C /* VimeoThumbnail.swift in Sources */,
+				665EF200290D228E00DBFA7A /* EndpointTests.swift in Sources */,
 				66F7001A290B853B00D18F4C /* AuthenticationViewModel.swift in Sources */,
 				66DE13192907FCEB00ECF1C1 /* Webservice.swift in Sources */,
 				66DE131C2907FCEB00ECF1C1 /* Resource.swift in Sources */,
